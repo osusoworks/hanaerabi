@@ -1,0 +1,63 @@
+[
+  {
+    "FlowerID": "F001",
+    "Name": "赤いバラ",
+    "Description": "情熱的な愛を象徴する定番の花です。",
+    "FlowerLanguage": "愛情、美、情熱",
+    "PriceRange": "中",
+    "Color": ["赤"],
+    "Taste": ["ゴージャス", "クラシック"],
+    "Purpose": ["告白", "記念日", "プロポーズ"],
+    "ImageUrl": "/images/rose_red.jpg",
+    "Tags": ["定番", "人気"]
+  },
+  {
+    "FlowerID": "F002",
+    "Name": "ピンクのカーネーション",
+    "Description": "感謝の気持ちを伝えるのに最適です。母の日の定番。",
+    "FlowerLanguage": "感謝、温かい心",
+    "PriceRange": "低",
+    "Color": ["ピンク"],
+    "Taste": ["キュート", "シンプル"],
+    "Purpose": ["母の日", "感謝"],
+    "ImageUrl": "/images/carnation_pink.jpg",
+    "Tags": ["定番", "感謝"]
+  },
+  {
+    "FlowerID": "F003",
+    "Name": "白いユリ",
+    "Description": "純粋さや高貴さを象徴します。フォーマルな場にも。",
+    "FlowerLanguage": "純粋、無垢、威厳",
+    "PriceRange": "高",
+    "Color": ["白"],
+    "Taste": ["ゴージャス", "フォーマル"],
+    "Purpose": ["お祝い", "お供え", "フォーマル"],
+    "ImageUrl": "/images/lily_white.jpg",
+    "Tags": ["フォーマル", "高貴"]
+  },
+  {
+    "FlowerID": "F004",
+    "Name": "黄色いチューリップ",
+    "Description": "春の訪れを感じさせる明るい花。希望や友情を表します。",
+    "FlowerLanguage": "希望、明るさ、友情",
+    "PriceRange": "低",
+    "Color": ["黄"],
+    "Taste": ["キュート", "カジュアル"],
+    "Purpose": ["誕生日", "応援", "カジュアルギフト"],
+    "ImageUrl": "/images/tulip_yellow.jpg",
+    "Tags": ["春", "元気"]
+  },
+  {
+    "FlowerID": "F005",
+    "Name": "青いデルフィニウム",
+    "Description": "涼しげで清らかな印象。幸福を呼ぶとも言われます。",
+    "FlowerLanguage": "清明、高貴、あなたは幸福をふりまく",
+    "PriceRange": "中",
+    "Color": ["青"],
+    "Taste": ["シンプル", "クラシック"],
+    "Purpose": ["お祝い", "夏のギフト"],
+    "ImageUrl": "/images/delphinium_blue.jpg",
+    "Tags": ["夏", "涼しげ"]
+  }
+  // ... Add more flower data based on ATELIER FLANNEL SHIRAOKA's actual products
+]

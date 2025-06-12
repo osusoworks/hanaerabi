@@ -1,0 +1,18 @@
+{
+  "F001": {
+    "IsInStock": true
+  },
+  "F002": {
+    "IsInStock": true
+  },
+  "F003": {
+    "IsInStock": false
+  },
+  "F004": {
+    "IsInStock": true
+  },
+  "F005": {
+    "IsInStock": true
+  }
+  // ... Add more inventory status based on FlowerID
+}
