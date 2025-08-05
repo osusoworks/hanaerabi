@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>花選びアプリ - Atelier Flannel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Atelier Flannel 花選びアプリ</h1>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>失敗しない花選び</h2>
+      <p>用途を選んで、おすすめの花を見つけましょう</p>
+    </section>
+
+    <section id="choices">
+      <button class="choice-btn" onclick="searchFlowers('birthday')">誕生日プレゼント</button>
+      <button class="choice-btn" onclick="searchFlowers('hospital')">お見舞い</button>
+      <button class="choice-btn" onclick="searchFlowers('farewell')">送別・退職祝い</button>
+      <button class="choice-btn" onclick="searchFlowers('casual')">ちょっとした贈り物</button>
+      <button class="choice-btn" onclick="searchFlowers('language')">花言葉から選ぶ</button>
+      <button class="choice-btn" onclick="searchFlowers('ai')">AIに聞く</button>
+    </section>
+
+    <section id="results">
+      <h2>おすすめの花</h2>
+      <div id="flower-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="#">Instagramを見る</a> | <a href="#">店舗情報</a></p>
+  </footer>
+
+  <script>
+    const flowers = [
+      { name: 'バラ', scene: ['birthday','farewell','casual'], meaning: '愛情・感謝', caution: '白一色は仏事連想' },
+      { name: 'ガーベラ', scene: ['birthday','farewell','hospital'], meaning: '希望・前進', caution: '特になし' },
+      { name: 'カーネーション', scene: ['birthday','casual'], meaning: '母への愛・感謝', caution: '白は追悼の意味あり' }
+      // ※ここに本来は50種類のデータをflowers.jsonなどから読み込む
+    ];
+
+    function searchFlowers(type){
+      const list = document.getElementById('flower-list');
+      list.innerHTML = '';
+      let results;
+      if(type==='ai'){
+        list.innerHTML = '<p>AI機能は今後実装予定です。</p>';
+        return;
+      } else if(type==='language'){
+        list.innerHTML = '<p>花言葉検索は今後実装予定です。</p>';
+        return;
+      }
+      results = flowers.filter(f => f.scene.includes(type));
+      if(results.length===0){
+        list.innerHTML = '<p>該当する花は見つかりませんでした。</p>';
+        return;
+      }
+      results.forEach(f => {
+        const card = document.createElement('div');
+        card.className = 'flower-card';
+        card.innerHTML = `<h3>${f.name}</h3><p>花言葉: ${f.meaning}</p><p>注意点: ${f.caution}</p>`;
+        list.appendChild(card);
+      });
+    }
+  </script>
+</body>
+</html>
