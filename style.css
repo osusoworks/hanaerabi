@@ -18,14 +18,6 @@
   position: relative;          /* ↓半透明オーバーレイ用 */
 }
 
-/* 文字が読みやすいよう薄いオーバーレイ（任意）*/
-.hero-header::after{
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.35);/* 黒35% 透過 */
-  pointer-events: none;
-}
 .hero-header h1{
   margin: 0;
   font-size: 1.2rem;
