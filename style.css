@@ -26,7 +26,7 @@ header {
 }
 header h1 {
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 700;
   font-family: "Shippori Mincho B1", "Noto Sans JP", serif; /* フェミニンな明朝 */
 }
@@ -75,7 +75,7 @@ header h1 {
 
 /* ---- Results ---- */
 #results {
-  padding: 1rem 1.5rem 2rem;
+  padding: 1rem ;
 }
 #result-title {
   margin-top: 0;
