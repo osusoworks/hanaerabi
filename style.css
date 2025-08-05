@@ -12,9 +12,9 @@
 .hero-header{
   /* 背景画像を中央寄せで全面表示（cover） */
   background: url("bg.png") center / cover no-repeat;
-  padding: 4rem 1rem;          /* 上下にたっぷり余白 */
+  padding: 2rem 1rem;          /* 上下にたっぷり余白 */
   text-align: center;
-  color: #fff;                 /* 文字を白くして映えるように */
+  color: #333333;              
   position: relative;          /* ↓半透明オーバーレイ用 */
 }
 
