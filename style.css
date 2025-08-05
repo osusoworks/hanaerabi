@@ -24,6 +24,13 @@ header {
   text-align: center;
   box-shadow: 0 1px 4px rgba(0,0,0,0.08);
 }
+.hero{
+  width:100%;           /* 横幅いっぱい */
+  max-height:200px;     /* 高さの上限   */
+  object-fit:cover;     /* はみ出さずトリミング */
+  border-radius:12px;   /* 角をやや丸める */
+  margin-top:0.5rem;    /* タイトルとの隙間 */
+}
 header h1 {
   margin: 0;
   font-size: 1.1rem;
