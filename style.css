@@ -46,7 +46,7 @@ header h1 {
 /* ---- Choice Buttons ---- */
 #choices {
   display: grid;
-  grid-template-columns: 0.5fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
   padding: 0 1.2rem 1.2rem;
 }
