@@ -79,6 +79,7 @@ header h1 {
 }
 #result-title {
   margin-top: 0;
+  font-size: 1.1rem;
   color: var(--primary-dark);
   text-align: center;
   font-family: "Shippori Mincho B1", "Noto Sans JP", serif;
