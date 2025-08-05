@@ -1,0 +1,125 @@
+/* ===== Atelier Flannel — 花選びアプリ 基本スタイル ===== */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+:root {
+  --primary: #ff8585;   /* メインカラー（ピンク寄りサーモン）*/
+  --primary-dark: #ff6b6b;
+  --bg: #f8f6f5;
+  --card-bg: #ffffff;
+  --text: #333333;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ---- Header ---- */
+header {
+  background: var(--card-bg);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* ---- Intro Section ---- */
+#intro {
+  text-align: center;
+  padding: 1rem 1.5rem;
+}
+#intro h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: var(--primary-dark);
+}
+
+/* ---- Choice Buttons ---- */
+#choices {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 0 1.5rem 1.5rem;
+}
+@media (min-width: 600px) {
+  #choices { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 900px) {
+  #choices { grid-template-columns: repeat(3, 1fr); }
+}
+.choice-btn {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  transition: background 0.2s ease;
+  width: 100%;
+}
+.choice-btn:hover {
+  background: var(--primary-dark);
+}
+
+/* ---- Results ---- */
+#results {
+  padding: 1rem 1.5rem 2rem;
+}
+#result-title {
+  margin-top: 0;
+  color: var(--primary-dark);
+  text-align: center;
+}
+
+.flower-card {
+  background: var(--card-bg);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.flower-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: var(--primary-dark);
+}
+
+/* ---- Back button ---- */
+#back-btn {
+  display: block;
+  margin: 1rem auto 0;
+  background: var(--primary-dark);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+#back-btn:hover {
+  background: var(--primary);
+}
+
+/* ---- Footer ---- */
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 1rem 0 2rem;
+  color: #666;
+}
+footer a {
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+footer a:hover { text-decoration: underline; }
