@@ -1,158 +1,166 @@
 /* ===== Atelier Flannel — 花選びアプリ 基本スタイル ===== */
 @import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap");
 :root {
-  --primary: #F0DEA3;
-  --primary-dark: #C9AB69;
-  --bg: #f8f6f5;
-  --card-bg: #ffffff;
-  --text: #333333;
+--primary: #F0DEA3;
+--primary-dark: #C9AB69;
+--bg: #f8f6f5;
+--card-bg: #ffffff;
+--text: #333333;
 }
 
 /* タイトル用ヒーローエリア */
 .hero-header{
-  /* 背景画像を中央寄せで全面表示（cover） */
-  background: url("bg.jpg") center / cover no-repeat;
-  padding: 4rem 1rem;          /* 上下にたっぷり余白 */
-  text-align: center;
-  color: #fff;                 /* 文字を白くして映えるように */
-  position: relative;          /* ↓半透明オーバーレイ用 */
+/* 背景画像を中央寄せで全面表示（cover） */
+background: url("bg.jpg") center / cover no-repeat;
+padding: 4rem 1rem;          /* 上下にたっぷり余白 */
+text-align: center;
+color: #fff;                 /* 文字を白くして映えるように */
+position: relative;          /* ↓半透明オーバーレイ用 */
 }
 
+/* 文字が読みやすいよう薄いオーバーレイ（任意）*/
+.hero-header::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);/* 黒35% 透過 */
+  pointer-events: none;
+}
 .hero-header h1{
-  margin: 0;
-  font-size: 1.2rem;
-  font-family: "Shippori Mincho B1","Noto Sans JP",serif;
-  position: relative;          /* オーバーレイより上に出す */
-  z-index: 1;
+margin: 0;
+font-size: 1.2rem;
+font-family: "Shippori Mincho B1","Noto Sans JP",serif;
+position: relative;          /* オーバーレイより上に出す */
+z-index: 1;
 }
 
 
 * { box-sizing: border-box; }
 body {
-  margin: 0;
-  font-family: "Noto Sans JP", sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
+margin: 0;
+font-family: "Noto Sans JP", sans-serif;
+background: var(--bg);
+color: var(--text);
+line-height: 1.6;
 }
 
 /* ---- Header ---- */
 header {
-  background: var(--card-bg);
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+background: var(--card-bg);
+padding: 1rem;
+text-align: center;
+box-shadow: 0 1px 4px rgba(0,0,0,0.08);
 }
 .hero{
-  width:100%;           /* 横幅いっぱい */
-  max-height:200px;     /* 高さの上限   */
-  object-fit:cover;     /* はみ出さずトリミング */
-  border-radius:12px;   /* 角をやや丸める */
-  margin-top:0.5rem;    /* タイトルとの隙間 */
+width:100%;           /* 横幅いっぱい */
+max-height:200px;     /* 高さの上限   */
+object-fit:cover;     /* はみ出さずトリミング */
+border-radius:12px;   /* 角をやや丸める */
+margin-top:0.5rem;    /* タイトルとの隙間 */
 }
 header h1 {
-  margin: 0;
-  font-size: 1.1rem;
-  font-weight: 700;
-  font-family: "Shippori Mincho B1", "Noto Sans JP", serif; /* フェミニンな明朝 */
+margin: 0;
+font-size: 1.1rem;
+font-weight: 700;
+font-family: "Shippori Mincho B1", "Noto Sans JP", serif; /* フェミニンな明朝 */
 }
 
 /* ---- Intro Section ---- */
 #intro {
-  text-align: center;
-  padding: 0.5rem 0.5rem;
+text-align: center;
+padding: 0.5rem 0.5rem;
 }
 #intro h2 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.2rem;
-  color: var(--primary-dark);
-  font-family: "Shippori Mincho B1", "Noto Sans JP", serif;
+margin: 0 0 0.5rem 0;
+font-size: 1.2rem;
+color: var(--primary-dark);
+font-family: "Shippori Mincho B1", "Noto Sans JP", serif;
 }
 
 /* ---- Choice Buttons ---- */
 #choices {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  padding: 0 1.2rem 1.2rem;
+display: grid;
+grid-template-columns: 1fr;
+gap: 1rem;
+padding: 0 1.2rem 1.2rem;
 }
 @media (min-width: 600px) {
-  #choices { grid-template-columns: 1fr 1fr; }
+#choices { grid-template-columns: 1fr 1fr; }
 }
 @media (min-width: 900px) {
-  #choices { grid-template-columns: repeat(3, 1fr); }
+#choices { grid-template-columns: repeat(3, 1fr); }
 }
 .choice-btn {
-  background: var(--primary);
-  color: #fff;
-  border: none;
-  padding: 0.5rem;
-  font-size: 1.1rem;
-  border-radius: 7px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  transition: background 0.2s ease;
-  width: 100%;
-  font-family: "Noto Sans JP", sans-serif;
+background: var(--primary);
+color: #fff;
+border: none;
+padding: 0.5rem;
+font-size: 1.1rem;
+border-radius: 7px;
+cursor: pointer;
+box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+transition: background 0.2s ease;
+width: 100%;
+font-family: "Noto Sans JP", sans-serif;
 }
 .choice-btn:hover {
-  background: var(--primary-dark);
+background: var(--primary-dark);
 }
 
 /* ---- Results ---- */
 #results {
-  padding: 0.7rem ;
+padding: 0.7rem ;
 }
 #result-title {
-  margin-top: 0;
-  font-size: 1.1rem;
-  color: var(--primary-dark);
-  text-align: center;
-  font-family: "Shippori Mincho B1", "Noto Sans JP", serif;
+margin-top: 0;
+font-size: 1.1rem;
+color: var(--primary-dark);
+text-align: center;
+font-family: "Shippori Mincho B1", "Noto Sans JP", serif;
 }
 
 .flower-card {
-  background: var(--card-bg);
-  padding: 0.5rem;
-  margin-bottom: 0.5rem;
-  border-radius: 10px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+background: var(--card-bg);
+padding: 0.5rem;
+margin-bottom: 0.5rem;
+border-radius: 10px;
+box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 .flower-card h3 {
-  margin: 0.5 0.5 0.5rem;
-  font-size: 1rem;
-  color: var(--primary-dark);
-  font-family: "Shippori Mincho B1", "Noto Sans JP", serif;
+margin: 0.5 0.5 0.5rem;
+font-size: 1rem;
+color: var(--primary-dark);
+font-family: "Shippori Mincho B1", "Noto Sans JP", serif;
 }
 
 /* ---- Back button ---- */
 #back-btn {
-  display: block;
-  margin: 1rem auto 0;
-  background: var(--primary-dark);
-  color: #fff;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  font-family: "Noto Sans JP", sans-serif;
+display: block;
+margin: 1rem auto 0;
+background: var(--primary-dark);
+color: #fff;
+border: none;
+padding: 0.75rem 1.5rem;
+font-size: 1rem;
+border-radius: 8px;
+cursor: pointer;
+box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+font-family: "Noto Sans JP", sans-serif;
 }
 #back-btn:hover {
-  background: var(--primary);
+background: var(--primary);
 }
 
 /* ---- Footer ---- */
 footer {
-  text-align: center;
-  font-size: 0.85rem;
-  padding: 1rem 0 2rem;
-  color: #666;
-  font-family: "Noto Sans JP", sans-serif;
+text-align: center;
+font-size: 0.85rem;
+padding: 1rem 0 2rem;
+color: #666;
+font-family: "Noto Sans JP", sans-serif;
 }
 footer a {
-  color: var(--primary-dark);
-  text-decoration: none;
+color: var(--primary-dark);
+text-decoration: none;
 }
 footer a:hover { text-decoration: underline; }
