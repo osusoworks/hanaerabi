@@ -12,7 +12,7 @@
 .hero-header{
   /* 背景画像を中央寄せで全面表示（cover） */
   background: url("bg.png") center / cover no-repeat;
-  padding: 2rem 1rem;          /* 上下にたっぷり余白 */
+  padding: 0.6rem 0.6rem;          /* 上下にたっぷり余白 */
   text-align: center;
   color: #fff;              
   position: relative;          /* ↓半透明オーバーレイ用 */
@@ -20,7 +20,7 @@
 
 .hero-header h1{
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Shippori Mincho B1","Noto Sans JP",serif;
   position: relative;          /* オーバーレイより上に出す */
   z-index: 1;
@@ -84,11 +84,11 @@ header h1 {
 }
 .choice-btn {
   background: var(--primary);
-  color: #222;
+  color: #fff;
   border: none;
   padding: 0.5rem;
   font-size: 1.1rem;
-  border-radius: 7px;
+  border-radius: 1px;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
   transition: background 0.2s ease;
@@ -156,5 +156,6 @@ footer a {
   text-decoration: none;
 }
 footer a:hover { text-decoration: underline; }
+
 
 
