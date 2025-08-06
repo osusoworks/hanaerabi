@@ -14,7 +14,7 @@
   background: url("bg.png") center / cover no-repeat;
   padding: 2rem 1rem;          /* 上下にたっぷり余白 */
   text-align: center;
-  color: #333333;              
+  color: #fff;              
   position: relative;          /* ↓半透明オーバーレイ用 */
 }
 
@@ -156,3 +156,4 @@ footer a {
   text-decoration: none;
 }
 footer a:hover { text-decoration: underline; }
+
