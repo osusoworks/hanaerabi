@@ -11,7 +11,7 @@
 /* タイトル用ヒーローエリア */
 .hero-header{
 /* 背景画像を中央寄せで全面表示（cover） */
-background: url("bg.jpg") center / cover no-repeat;
+background: url("bg.png") center / cover no-repeat;
 padding: 4rem 1rem;          /* 上下にたっぷり余白 */
 text-align: center;
 color: #fff;                 /* 文字を白くして映えるように */
@@ -23,12 +23,12 @@ position: relative;          /* ↓半透明オーバーレイ用 */
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.35);/* 黒35% 透過 */
+  background: rgba(0,0,0,0.05);/* 黒5% 透過 */
   pointer-events: none;
 }
 .hero-header h1{
 margin: 0;
-font-size: 1.2rem;
+font-size: 1.0rem;
 font-family: "Shippori Mincho B1","Noto Sans JP",serif;
 position: relative;          /* オーバーレイより上に出す */
 z-index: 1;
