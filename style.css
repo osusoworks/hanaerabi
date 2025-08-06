@@ -1,4 +1,4 @@
-/* ===== Atelier Flannel — 花選びアプリ 基本スタイル ===== */
+/* ===== Atelier Flannel — 花選びアプリ 基本スタイル ===== nandenan*/
 @import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap");
 :root {
 --primary: #F0DEA3;
@@ -164,3 +164,4 @@ color: var(--primary-dark);
 text-decoration: none;
 }
 footer a:hover { text-decoration: underline; }
+
