@@ -62,9 +62,8 @@ header h1 {
 .choice-btn {
   background: #ffffff;
   color: #222;
-  border: 2px;
-  border-color:#C9AB69;
-  padding: 0.3rem;
+  border: 2px solid #C9AB69;
+  padding: 0.2rem;
   font-size: 1.1rem;
   border-radius: 0px;
   cursor: pointer;
