@@ -52,7 +52,6 @@ header h1 {
   grid-template-columns: 1fr;
   gap: 1rem;
   padding: 0 1.2rem 1.2rem;
-  margin-left: 6px;
 }
 @media (min-width: 600px) {
   #choices { grid-template-columns: 1fr 1fr; }
@@ -61,17 +60,17 @@ header h1 {
   #choices { grid-template-columns: repeat(3, 1fr); }
 }
 .choice-btn {
-  background: var(--primary);
+  background: var(--primary-dark);
   color: #fff;
   border: none;
   padding: 0.5rem;
   font-size: 1.1rem;
   border-radius: 0px;
   cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
   transition: background 0.2s ease;
   width: 100%;
   font-family: "Noto Sans JP", sans-serif;
+  margin-left: 6px;
 }
 .choice-btn:hover {
   background: var(--primary-dark);
