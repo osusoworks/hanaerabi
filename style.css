@@ -137,5 +137,21 @@ footer a {
   text-decoration: none;
 }
 footer a:hover { text-decoration: underline; }
+/* 1) 読み込みは 400/600 両方にしておく */
+@import url("https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=M+PLUS+Rounded+1c:wght@400;700&display=swap");
 
+/* 2) 見出しは Klee One / 600 に統一（Noto Serifの指定は上書き） */
+h1, h2, h3{
+  font-family: "Klee One", "M PLUS Rounded 1c", sans-serif;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: #2f2f2f;
+}
+
+/* 3) 本文・ボタンは M PLUS Rounded に */
+body, .choice-btn, #intro, #result-title, .flower-card, #back-btn, footer{
+  font-family: "M PLUS Rounded 1c", "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;   /* ← 今 .5 になってるのは小さすぎる */
+}
 
