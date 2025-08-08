@@ -1,5 +1,5 @@
 /* ===== Atelier Flannel — 花選びアプリ 基本スタイル ===== */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=M+PLUS+Rounded+1c:wght@400;700&display=swap");
 
 :root {
   --primary: #F0DEA3;
@@ -12,7 +12,7 @@
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family:"Noto Serif JP","Noto Sans JP",serif;
+  font-family:"M PLUS Rounded 1c";
   background: var(--bg);
   color: var(--text);
   line-height: .5;
@@ -43,7 +43,7 @@ header h1 {
   margin: 0 0 0.5rem 0;
   font-size: 1.1rem;
   color: var(--primary-dark);
-  font-family:"Noto Serif JP","Noto Sans JP",serif;
+  font-family:"klee One";
 }
 
 /* ---- Choice Buttons ---- */
@@ -69,7 +69,7 @@ header h1 {
   cursor: pointer;
   transition: background 0.2s ease;
   width: 100%;
-  font-family:"Noto Serif JP","Noto Sans JP",serif;
+  font-family:"M PLUS Rounded 1c";
   text-align: left;
   padding-left: 1rem;   /* 好みで調整 */
 }
@@ -87,7 +87,7 @@ header h1 {
   font-size: 1.1rem;
   color: var(--primary-dark);
   text-align: center;
-  font-family:"Noto Serif JP","Noto Sans JP",serif;
+  font-family:"klee One";
 }
 
 .flower-card {
@@ -103,7 +103,7 @@ header h1 {
   margin: .5rem 0;
   font-size: 1rem;
   color: var(--primary-dark);
-  font-family:"Noto Serif JP","Noto Sans JP",serif;
+  font-family:"klee One";
 }
 
 /* ---- Back button ---- */
@@ -118,7 +118,7 @@ header h1 {
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  font-family:"Noto Serif JP","Noto Sans JP",serif;
+  font-family:"M PLUS Rounded 1c";
 }
 #back-btn:hover {
   background: var(--primary);
@@ -130,7 +130,7 @@ footer {
   font-size: 0.85rem;
   padding: 1rem 0 2rem;
   color: #666;
-  font-family:"Noto Serif JP","Noto Sans JP",serif;
+  font-family:"M PLUS Rounded 1c";
 }
 footer a {
   color: var(--primary-dark);
