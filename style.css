@@ -23,7 +23,7 @@ header { text-align: center; }           /* タイトルはこのまま中央で
 header .logo{
   display: block;        /* 画像をブロックに */
   width: 120px;          /* お好みで */
-  margin-left: 8px; }  /* 数値を微調整 */
+  margin-left: 10px; }  /* 数値を微調整 */
 
 
 header h1 {
@@ -63,6 +63,7 @@ header h1 {
   background: #ffffff;
   color: #222;
   border: 2px;
+  border-color:#C9AB69;
   padding: 0.3rem;
   font-size: 1.1rem;
   border-radius: 0px;
