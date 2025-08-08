@@ -23,7 +23,7 @@ header { text-align: center; }           /* タイトルはこのまま中央で
 header .logo{
   display: block;        /* 画像をブロックに */
   width: 120px;          /* お好みで */
-  margin-left: 2px; }  /* 数値を微調整 */
+  margin-left: 6px; }  /* 数値を微調整 */
 
 
 header h1 {
@@ -52,6 +52,7 @@ header h1 {
   grid-template-columns: 1fr;
   gap: 1rem;
   padding: 0 1.2rem 1.2rem;
+  margin-left: 6px;
 }
 @media (min-width: 600px) {
   #choices { grid-template-columns: 1fr 1fr; }
