@@ -1,5 +1,6 @@
 /* ===== Atelier Flannel — 花選びアプリ 基本スタイル ===== */
-@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap");
+
 :root {
   --primary: #F0DEA3;
   --primary-dark: #C9AB69;
@@ -11,7 +12,7 @@
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family:"Noto Serif JP","Noto Sans JP",serif;
   background: var(--bg);
   color: var(--text);
   line-height: .5;
@@ -30,7 +31,7 @@ header h1 {
   margin: 0;
   font-size: 1.1rem;
   font-weight: 700;
-  font-family: "Shippori Mincho B1", "Noto Sans JP", serif; /* フェミニンな明朝 */
+  font-family:"Noto Serif JP","Noto Sans JP",serif;
 }
 
 /* ---- Intro Section ---- */
@@ -42,7 +43,7 @@ header h1 {
   margin: 0 0 0.5rem 0;
   font-size: 1.1rem;
   color: var(--primary-dark);
-  font-family: "Shippori Mincho B1", "Noto Sans JP", serif;
+  font-family:"Noto Serif JP","Noto Sans JP",serif;
 }
 
 /* ---- Choice Buttons ---- */
@@ -68,7 +69,7 @@ header h1 {
   cursor: pointer;
   transition: background 0.2s ease;
   width: 100%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family:"Noto Serif JP","Noto Sans JP",serif;
   text-align: left;
   padding-left: 1rem;   /* 好みで調整 */
 }
@@ -86,7 +87,7 @@ header h1 {
   font-size: 1.1rem;
   color: var(--primary-dark);
   text-align: center;
-  font-family: "Shippori Mincho B1", "Noto Sans JP", serif;
+  font-family:"Noto Serif JP","Noto Sans JP",serif;
 }
 
 .flower-card {
@@ -102,7 +103,7 @@ header h1 {
   margin: .5rem 0;
   font-size: 1rem;
   color: var(--primary-dark);
-  font-family: "Shippori Mincho B1", "Noto Sans JP", serif;
+  font-family:"Noto Serif JP","Noto Sans JP",serif;
 }
 
 /* ---- Back button ---- */
@@ -117,7 +118,7 @@ header h1 {
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  font-family: "Noto Sans JP", sans-serif;
+  font-family:"Noto Serif JP","Noto Sans JP",serif;
 }
 #back-btn:hover {
   background: var(--primary);
@@ -129,7 +130,7 @@ footer {
   font-size: 0.85rem;
   padding: 1rem 0 2rem;
   color: #666;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family:"Noto Serif JP","Noto Sans JP",serif;
 }
 footer a {
   color: var(--primary-dark);
