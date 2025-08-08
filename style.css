@@ -18,11 +18,12 @@ body {
 }
 
 /* ---- Header ---- */
-header {
-  background: var(--card-bg);
-  padding:  .5rem 0;
-  text-align: center;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+/* CSS */
+header { text-align: center; }           /* タイトルはこのまま中央でもOK */
+header .logo{
+  display: block;        /* 画像をブロックに */
+  width: 100px;          /* お好みで */
+  margin: .25rem 0 0 0;  /* ← auto を消す＝左寄せになる */
 }
 header h1 {
   margin: 0;
