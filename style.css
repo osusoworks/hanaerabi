@@ -1,4 +1,6 @@
 /* ===== Atelier Flannel — 花選びアプリ 基本スタイル ===== */
+/* 1) 読み込みは 400/600 両方にしておく */
+@import url("https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=M+PLUS+Rounded+1c:wght@400;700&display=swap");
 
 :root {
   --primary: #F0DEA3;
@@ -136,8 +138,6 @@ footer a {
   text-decoration: none;
 }
 footer a:hover { text-decoration: underline; }
-/* 1) 読み込みは 400/600 両方にしておく */
-@import url("https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=M+PLUS+Rounded+1c:wght@400;700&display=swap");
 
 /* 2) 見出しは Klee One / 600 に統一（Noto Serifの指定は上書き） */
 h1, h2, h3{
