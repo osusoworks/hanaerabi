@@ -23,8 +23,8 @@ header { text-align: center; }           /* タイトルはこのまま中央で
 header .logo{
   display: block;        /* 画像をブロックに */
   width: 120px;          /* お好みで */
-  margin: .25rem 0 0 0;  /* ← auto を消す＝左寄せになる */
-}
+  margin-left: 2px; }  /* 数値を微調整 */
+
 
 header h1 {
   margin: 0;
