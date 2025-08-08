@@ -3,7 +3,7 @@
 :root {
   --primary: #F0DEA3;
   --primary-dark: #C9AB69;
-  --bg: #f8f6f5;
+  --bg: #fff;
   --card-bg: #ffffff;
   --text: #333333;
 }
@@ -22,7 +22,7 @@ body {
 header { text-align: center; }           /* タイトルはこのまま中央でもOK */
 header .logo{
   display: block;        /* 画像をブロックに */
-  width: 100px;          /* お好みで */
+  width: 120px;          /* お好みで */
   margin: .25rem 0 0 0;  /* ← auto を消す＝左寄せになる */
 }
 
@@ -64,7 +64,7 @@ header h1 {
   border: none;
   padding: 0.5rem;
   font-size: 1.1rem;
-  border-radius: 7px;
+  border-radius: 0px;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
   transition: background 0.2s ease;
