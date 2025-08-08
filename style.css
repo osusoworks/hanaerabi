@@ -25,6 +25,7 @@ header .logo{
   width: 100px;          /* お好みで */
   margin: .25rem 0 0 0;  /* ← auto を消す＝左寄せになる */
 }
+
 header h1 {
   margin: 0;
   font-size: 1.1rem;
