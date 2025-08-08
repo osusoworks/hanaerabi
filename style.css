@@ -23,7 +23,7 @@ header { text-align: center; }           /* タイトルはこのまま中央で
 header .logo{
   display: block;        /* 画像をブロックに */
   width: 120px;          /* お好みで */
-  margin-left: 6px; }  /* 数値を微調整 */
+  margin-left: 8px; }  /* 数値を微調整 */
 
 
 header h1 {
@@ -60,19 +60,21 @@ header h1 {
   #choices { grid-template-columns: repeat(3, 1fr); }
 }
 .choice-btn {
-  background: var(--primary-dark);
-  color: #fff;
-  border: none;
-  padding: 0.5rem;
+  background: #ffffff;
+  color: #222;
+  border: 2px;
+  padding: 0.3rem;
   font-size: 1.1rem;
   border-radius: 0px;
   cursor: pointer;
   transition: background 0.2s ease;
   width: 100%;
   font-family: "Noto Sans JP", sans-serif;
-  margin-left: 6px;
+  text-align: left;
+  padding-left: 1rem;   /* 好みで調整 */
 }
 .choice-btn:hover {
+  color: #fff;
   background: var(--primary-dark);
 }
 
